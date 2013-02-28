@@ -17,3 +17,5 @@
 # Ignore JEdit temp files
 *\~
 
+/listmgr.txt
+
