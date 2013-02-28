@@ -5,9 +5,11 @@ one:
   comment: MyString
   items: "a\nb\nc"
   version: 2
+  collection: one
 
 two:
   name: MySecondList
   items: ""
   version: 1
+  collection: one
 
