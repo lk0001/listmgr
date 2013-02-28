@@ -1,13 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyList
-  comment: MyString
-  items: "a\nb\nc"
-  version: 2
-
-two:
-  name: MySecondList
-  items: ""
+  name: MyOldList
+  comment: MyOldString
+  items: "a\nb"
   version: 1
+  list: one
 

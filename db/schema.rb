@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130228132058) do
+ActiveRecord::Schema.define(:version => 20130228133142) do
+
+  create_table "archived_lists", :force => true do |t|
+    t.string   "name",       :null => false
+    t.string   "comment"
+    t.string   "items"
+    t.integer  "version",    :null => false
+    t.integer  "list_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "archived_lists", ["list_id"], :name => "index_archived_lists_on_list_id"
 
   create_table "lists", :force => true do |t|
     t.string   "name",                       :null => false
